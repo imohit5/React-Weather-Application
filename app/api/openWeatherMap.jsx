@@ -11,16 +11,6 @@ module.exports ={
 
 
     return axios.get(requestUrl).then(function(res){
-      // if(res.status === 200 && res.statusText === "OK"){
-      //   return res.data.main.temp;
-      // } else {
-      //   throw new Error(res.response.data.message);
-      // }
-      // if(res.response && res.response){
-      //   throw new Error(res.response.data.message);
-      // } else {
-      //   return res.data.main.temp;
-      // }
       if(res.data.cod && res.data.message){
         throw new Error(res.data.message);
       } else {
