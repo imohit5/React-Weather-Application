@@ -6,8 +6,12 @@ var Weather = require('Weather');
 var About = require('About');
 var Examples = require('Examples');
 
+//Foundation css
 require('style!css!foundation-sites/dist/foundation.min.css')
 $(document).foundation();
+
+//App css
+require('style!css!applicationStyles')
 
 var name = 'Mohit Arun'
 var message = 'This messsage is from Prop'
