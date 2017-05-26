@@ -28,12 +28,12 @@ var Weather = React.createClass({
         });
     },function(e){
       that.setState({
-        //location :null,
-        //temp : null,
+        location :null,
+        temp : null,
         isLoading:false,
         errorMessage: e.message
       });
-      alert(errMessage);
+    //  alert(errMessage);
     });
   },
   componentDidMount: function (){
